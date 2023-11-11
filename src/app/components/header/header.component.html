@@ -1,0 +1,33 @@
+<header class="header" id="header" [ngClass]="{sticky: isScrolled}" (scroll)="onWindowScroll()">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">
+      <img src="../../../assets/images/logo.png" alt="">
+    </a>
+
+    <div class="nav__menu" [ngClass]="{active: toggleMenu}" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active-link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#discover" class="nav__link">Our Project</a>
+        </li>
+        <li class="nav__item">
+          <a href="#place" class="nav__link">About us</a>
+        </li>
+      </ul>
+
+      <button class="button">
+        Contact us
+      </button>
+      <div (click)="toggleMenu = false" class="nav__close" id="nav-close"><i class="ri-close-line nav__close"></i></div>
+    </div>
+
+    <div (click)="toggleMenu = true" class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-3-fill"></i>
+    </div>
+  </nav>
+</header>

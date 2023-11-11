@@ -1,0 +1,133 @@
+.home__container {
+  position: relative;
+  display: flex;
+}
+
+.images,
+.text-group {
+  flex-basis: 50%;
+}
+
+.text-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-top: 4rem;
+}
+
+.images {
+  position: relative;
+}
+
+.decorator {
+  position: absolute;
+  width: 100%;
+  min-height: 50vh;
+  z-index: -1;
+  top: 50px;
+}
+
+.decorator img {
+  position: absolute;
+}
+.line {
+  top: 50pxrem;
+  left: 0;
+}
+.circles {
+  top: 0;
+  right: 0;
+}
+
+.add {
+  bottom: 50px;
+  right: 0;
+}
+
+.play {
+  left: -70px;
+  bottom: -70px;
+}
+
+.button i {
+  font-size: var(--normal-font-size);
+}
+
+.blur1,
+.blur2 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+.blur1 {
+  background-color: var(--first-color-alt);
+  filter: blur(50px);
+  transform: rotate(35deg);
+  top: -20%;
+  left: -70%;
+  border-radius: 100px;
+}
+.blur2 {
+  background-image: linear-gradient(45deg, var(--accent-1), var(--accent-2));
+  transform: rotate(-20deg);
+  filter: blur(100px);
+  bottom: -10%;
+  right: -30%;
+  height: 350px;
+}
+
+.home_video {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.home_video .text {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+.home_video .text p {
+  padding-top: 1rem;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-shadow: -4px 7px 46px -7px rgba(84, 84, 212, 0.5);
+  -webkit-box-shadow: -4px 7px 46px -7px rgba(84, 84, 212, 0.5);
+  -moz-box-shadow: -4px 7px 46px -7px rgba(84, 84, 212, 0.5);
+}
+
+.play-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 30px;
+  background: var(--first-color);
+  color: var(--title-color);
+  font-size: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.play-btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(202, 202, 202, 0.89) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media screen and (max-width: 720px) {
+  .home__container {
+    flex-direction: column;
+  }
+}

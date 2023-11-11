@@ -1,0 +1,38 @@
+<section class="home__section">
+  <div class="home__container container">
+    <span class="blur1"></span>
+    <span class="blur2"></span>
+    <div class="text-group">
+      <h1 class="title">Build Your Awesome Platform</h1>
+      <p class="description">Enver studio is a digital studio that offers several services such as UI/UX Design to
+        developers, we will provide the
+        best service for those of you who use our services.</p>
+      <button class="button secondary">
+        Our services <i class="ri-arrow-right-up-line"></i>
+      </button>
+    </div>
+    <div class="images">
+      <img src="../../../assets/images/banner.png" class="banner-img" alt="banner image">
+      <div class="decorator">
+        <img src="../../../assets//images/line.png" alt="line" class="line">
+        <img src="../../../assets//images/circles.png" alt="circles" class="circles">
+        <img src="../../../assets//images/add.png" alt="add" class="add">
+        <img src="../../../assets//images/play.png" alt="play" class="play">
+      </div>
+    </div>
+  </div>
+  <div class="home_video container">
+    <div class="text">
+      <h1 class="title">
+        Why Enver Is The Best Choice?
+      </h1>
+      <p>Watch this one minute video so you understand why you should use our services!</p>
+    </div>
+    <div class="video">
+      <button (click)="playPause()" class="play-btn" id="play-btn">
+        <i class="ri-play-fill"></i>
+      </button>
+      <video #videoID src="../../../assets/vid1.mp4"></video>
+    </div>
+  </div>
+</section>

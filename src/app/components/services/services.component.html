@@ -1,0 +1,23 @@
+<section class="services_section">
+  <div class="layer-blur-circle"></div>
+  <div class="blur2"></div>
+  <img src="../../../assets/images/add.png" alt="" class="services_plus_decorator">
+  <img src="../../../assets/images/add.png" alt="" class="services_plus_decorator2">
+  <img src="../../../assets/images/play.png" alt="" class="services_play_decorator">
+  <div class="section__cntainer container">
+    <h1 class="title">
+      The Service We Provide For You
+    </h1>
+    <div class="services-list">
+      <div *ngFor="let service of serviseData" class="service_item">
+        <span class="imgContainer" [style.background-color]="service.color + '10'">
+          <span class="imgContentContainer" [style.background-color]="service.color + '15'">
+            <img [src]="service.iconUrl" alt="">
+          </span>
+        </span>
+        <h3>{{service.name}}</h3>
+        <p>{{service.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>

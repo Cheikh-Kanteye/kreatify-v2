@@ -1,0 +1,11 @@
+.header {
+  transition: all 0.4s ease;
+}
+
+.sticky {
+  background-color: var(--first-color);
+}
+
+.header i {
+  color: var(--title-color);
+}
